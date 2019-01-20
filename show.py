@@ -1,9 +1,9 @@
 from colorama import Fore
+from clear import clear
 
 def show_some(player,dealer,chips):
 
-    print('\n'*50, chips, '\n')
-
+    clear()
     print(Fore.YELLOW, 'Dealer showing:')
 
     dealer_tmp = []
@@ -20,13 +20,12 @@ def show_some(player,dealer,chips):
     print('\n', Fore.CYAN, f'Player at {player.value} with:')
     for card in player.cards:
         print('\t', card)
-    
+
 #-----------------------------------------------------
 
 def show_all(player,dealer,chips):
 
-    print('\n'*50, chips, '\n')
-
+    clear()
     print(Fore.YELLOW, f'Dealer at {dealer.value} with:')
 
     for card in dealer.cards:
@@ -35,7 +34,7 @@ def show_all(player,dealer,chips):
     print('\n', Fore.CYAN, f'Player at {player.value} with:')
     for card in player.cards:
         print('\t', card)
-    
+
 #-----------------------------------------------------
 
 def hit_or_stand(deck, hand):
@@ -72,4 +71,3 @@ def user_continue(chips):
         while response not in ['y','n']:
             response = input('Would you like to play again (y/n)? ').lower()
         return (response == 'y')
-

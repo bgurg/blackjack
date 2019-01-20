@@ -1,16 +1,18 @@
+from clear import clear
+
 class Chips:
-    
+
     def __init__(self, total):
         self.total = total
         self.bet = 0
-    
+
     def __str__(self):
         return 'Currently betting ' + str(self.bet) + ' of ' + str(self.total) + ' chips'
-    
+
     def win_bet(self):
         self.total += self.bet
         self.bet = 0
-    
+
     def lose_bet(self):
         self.total -= self.bet
         self.bet = 0
@@ -19,11 +21,11 @@ class Chips:
 
 def take_bet(chips):
 
-    print('\n'*50)
+    clear()
     print(chips)
 
     valid_bet = False
-    
+
     while not valid_bet:
         try:
             amt = int(input('Enter bet: '))
@@ -37,4 +39,3 @@ def take_bet(chips):
             else:
                 chips.bet = amt
                 valid_bet = True
-            
