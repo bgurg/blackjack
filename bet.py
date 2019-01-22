@@ -16,8 +16,6 @@ class Chips:
         self.total -= self.bet
         self.bet = 0
 
-#-----------------------------------------------------
-
 def take_bet(chips):
     clear()
     print(chips)

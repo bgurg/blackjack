@@ -1,13 +1,10 @@
 from colorama import Fore
 
-playing = True
-
 import deck as deck
 import bet as bet
 import show as show
 
-#-----------------------------------------------------
-
+playing = True
 player_chips = bet.Chips(100)
 
 while playing:
