@@ -1,7 +1,6 @@
 from clear import clear
 
 class Chips:
-
     def __init__(self, total):
         self.total = total
         self.bet = 0
@@ -20,7 +19,6 @@ class Chips:
 #-----------------------------------------------------
 
 def take_bet(chips):
-
     clear()
     print(chips)
 

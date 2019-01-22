@@ -10,7 +10,6 @@ values = {'Two':2, 'Three':3, 'Four':4, 'Five':5, 'Six':6, 'Seven':7, 'Eight':8,
 #-----------------------------------------------------
 
 class Card():
-    
     def __init__(self, rank, suit):
         self.suit = suit
         self.rank = rank
@@ -22,7 +21,6 @@ class Card():
 #-----------------------------------------------------
 
 class Deck():
-    
     def __init__(self):
         self.deck = []  # start with an empty list
         for suit in suits:

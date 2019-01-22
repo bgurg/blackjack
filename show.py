@@ -2,7 +2,6 @@ from colorama import Fore
 from clear import clear
 
 def show_some(player,dealer,chips):
-
     clear()
     print(Fore.YELLOW, 'Dealer showing:')
 
@@ -24,7 +23,6 @@ def show_some(player,dealer,chips):
 #-----------------------------------------------------
 
 def show_all(player,dealer,chips):
-
     clear()
     print(Fore.YELLOW, f'Dealer at {dealer.value} with:')
 
